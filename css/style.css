@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body, html{
-  height: 100%;
+  height: 125%;
   font-family: Roboto;
 }
 a {
@@ -18,20 +18,27 @@ ul {
 #parallax {
   background: url('/images/shop-counter.jpg') no-repeat center center/cover;
   background-attachment: fixed;
-  height: 150%;
+  height: 100%;
 }
+/* Parallax BG-2 */
+  #parallax-2 {
+    background: url('/images/barista.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 50%;
+  }
 
 /* Navbar */
   nav {
    background:rgba(0, 0, 0, 0.719);
    color: #f4f4f4;
-  }
-  nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-
+    font-size: 0.75rem;
+  }
+  nav h1 {
+    text-transform: uppercase;
   }
   nav ul {
     display: flex;
@@ -39,29 +46,77 @@ ul {
   }
   nav ul li a{
     padding: 1.5rem;
+    text-transform: uppercase;
   }
 
   nav ul li a:hover{
-    background: rgba(17, 17, 17, 0.719);
-    border-bottom: 3px solid #422121
+    background:  rgb(252, 246, 237);
+    color: #333;
+    
+    /* rgba(17, 17, 17, 0.719); */
+   
   }
   nav h1 a:hover {
-    color: rgb(196, 196, 196);
+    color: rgb(252, 246, 237);
   }
   
-  /* Parallax Text */
-  .parallax-text h2 {
+  /* Header Text */
+  .header-text h2 {
     font-size: 2.8rem;
     font-weight: 800;
-  }
-  .parallax-text{
     color: #f4f4f4;
     text-align: center;
     background: rgba(0, 0, 0, 0.719);
     width: 400px;
     margin: auto;
     padding: 1rem;
-    margin-top: 250px;
+    margin-top: 320px;
     border: 3px solid #f4f4f4;
     
+  }
+  /* Section: Content Text */
+  #content {
+    background: rgb(252, 246, 237);
+    height: 45%;
+    /* white-space: pre-wrap; */
+    
+  }
+  #content h2{
+    padding: 150px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  /* Section: Gallery */
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 86%;
+    background: rgb(252, 246, 237);
+  
+
+  }
+  .coffee-img-1 {
+  width: 600px;
+  padding: 1.5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  }
+
+
+  .coffee-img-2, .coffee-img-3 {
+   width: 650px;
+   padding: 30px;
+  
+  }
+  .column {
+  flex: 50%;
+  padding: 1.5rem;
+ 
+  }
+  #gallery img:hover {
+  opacity: 0.9;
   }
