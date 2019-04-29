@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body, html{
-  height: 125%;
+  height: 100%;
   font-family: Roboto;
 }
 a {
@@ -18,13 +18,13 @@ ul {
 #parallax {
   background: url('/images/shop-counter.jpg') no-repeat center center/cover;
   background-attachment: fixed;
-  height: 100%;
+  height: 135%;
 }
 /* Parallax BG-2 */
   #parallax-2 {
     background: url('/images/barista.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    height: 50%;
+    height: 80%;
   }
 
 /* Navbar */
@@ -76,9 +76,7 @@ ul {
   }
   /* Section: Content Text */
   #content {
-    background: rgb(252, 246, 237);
-    height: 45%;
-    /* white-space: pre-wrap; */
+    background: rgb(252, 246, 237)
     
   }
   #content h2{
@@ -94,8 +92,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 86%;
     background: rgb(252, 246, 237);
+    text-align: center;
   
 
   }
@@ -119,4 +117,9 @@ ul {
   }
   #gallery img:hover {
   opacity: 0.9;
+  }
+  /* Footer */
+  footer {
+    background: black;
+    color: #fff;
   }
