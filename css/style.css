@@ -6,7 +6,11 @@
 body, html{
   height: 100%;
   font-family: Roboto;
+  letter-spacing: .11rem;
+  background: rgb(252, 246, 237);
+  font-size: 0.875rem;
 }
+
 a {
   color: #f4f4f4;
   text-decoration: none;
@@ -14,13 +18,13 @@ a {
 ul {
   list-style: none;
 }
-/* Header Parallax BG */
+/* Homepage Parallax BG */
 #parallax {
   background: url('/images/shop-counter.jpg') no-repeat center center/cover;
   background-attachment: fixed;
   height: 135%;
 }
-/* Parallax BG-2 */
+/* Homepage Parallax BG-2 */
   #parallax-2 {
     background: url('/images/barista.jpg') no-repeat center center/cover;
     background-attachment: fixed;
@@ -37,6 +41,11 @@ ul {
     padding: 1.5rem;
     font-size: 0.75rem;
   }
+  .nav-active {
+    background:  rgb(252, 246, 237);
+    color: #333;
+  }
+  
   nav h1 {
     text-transform: uppercase;
   }
@@ -52,13 +61,13 @@ ul {
   nav ul li a:hover{
     background:  rgb(252, 246, 237);
     color: #333;
-    
-    /* rgba(17, 17, 17, 0.719); */
+
    
   }
   nav h1 a:hover {
     color: rgb(252, 246, 237);
   }
+  /* Home Page */
   
   /* Header Text */
   .header-text h2 {
@@ -85,7 +94,7 @@ ul {
     text-transform: uppercase;
     text-align: center;
     line-height: 1.5;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
   }
   /* Section: Gallery */
   #gallery {
@@ -94,32 +103,102 @@ ul {
     justify-content: space-between;
     background: rgb(252, 246, 237);
     text-align: center;
-  
-
   }
   .coffee-img-1 {
-  width: 600px;
-  padding: 1.5rem;
-  margin-right: 5rem;
-  margin-top: 2rem;
+    width: 600px;
+    padding: 1.5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
   }
-
-
-  .coffee-img-2, .coffee-img-3 {
-   width: 650px;
-   padding: 30px;
   
+  
+  .coffee-img-2, .coffee-img-3 {
+    width: 650px;
+    padding: 30px;
+    
   }
   .column {
-  flex: 50%;
-  padding: 1.5rem;
- 
+    flex: 50%;
+    padding: 1.5rem; 
   }
   #gallery img:hover {
-  opacity: 0.9;
+    animation-name: opacity-hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
   }
+  @keyframes opacity-hover {
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
   /* Footer */
   footer {
     background: black;
     color: #fff;
+    /* height: 50%; */
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
   }
+  footer ul {
+   padding: 3rem;
+   text-transform: uppercase;
+  }
+  footer ul li {
+    margin: 1rem;
+  }
+  footer ul li a:hover{
+    color:rgb(252, 246, 237);
+  }
+  footer a {
+    text-decoration: underline;
+  }
+  .mail-link {
+    padding-top: 1rem;
+    text-transform: lowercase;
+  }
+  .instagram-icon {
+    padding-top: 1rem;
+  }
+  /* Sign up Form */
+  form{
+    padding: 3rem;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin: auto;
+  }
+  form h3{
+    margin-bottom: 2rem;
+    font-size: 0.75rem;
+  }
+  form input{
+    width: 65%;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  
+  }
+  form button{
+    padding: 0.75rem 1.3rem;
+    border: 1px solid #fff;
+    background: #000000;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.75rem;
+  }
+  form button:hover{
+    background:  rgb(252, 246, 237);
+    color: #333;
+  }
+  form input:focus, form button:focus{
+    outline: none;
+  }
+footer p{ 
+  align-self: flex-end;
+  font-size: 0.75rem;
+  padding: 2rem;
+  color: #999999;
+}
+
+/* About Page */
