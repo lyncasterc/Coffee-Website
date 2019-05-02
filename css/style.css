@@ -9,6 +9,7 @@ body, html{
   letter-spacing: .11rem;
   background: rgb(252, 246, 237);
   font-size: 0.875rem;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -252,20 +253,6 @@ ul {
 
 /* Locations Page */
 /* Locations Parallax Backgrounds */
- .wahi-map iframe, .greenwich-map iframe, .harlem-map iframe {
-    left: 240px;
-    top: 0;
-    height: 60%;
-    width: 60%;
-    position: absolute;
-}
-
-.wahi-map, .harlem-map, .greenwich-map {
-  overflow: hidden;
-  padding-bottom: 46.25%;
-  position: relative;
-  height: 0;
-}
 
 #locations-parallax{
   background: url('/images/wahi.jpg') no-repeat center center/cover;
@@ -283,7 +270,9 @@ ul {
   height: 100%;
 }
 
-
+.wahi-map iframe, .greenwich-map iframe, .harlem-map iframe {
+  max-width: 100%;
+}
 
 
 
