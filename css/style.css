@@ -19,13 +19,12 @@ ul {
   list-style: none;
 }
 /* Homepage Parallax BG */
-#parallax {
+#home-parallax {
   background: url('/images/shop-counter.jpg') no-repeat center center/cover;
   background-attachment: fixed;
   height: 135%;
 }
-/* Homepage Parallax BG-2 */
-  #parallax-2 {
+  #home-parallax-2 {
     background: url('/images/barista.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     height: 80%;
@@ -179,8 +178,8 @@ ul {
     margin: auto;
   }
   form h3{
-    margin-bottom: 2rem;
-    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.80rem;
   }
   form input{
     min-width: 65%;
@@ -214,6 +213,125 @@ ul {
 }
 
 /* About Page */
+#about .about-text {
+  /* border: 1px solid red; */
+  max-width: 600px;
+  margin: auto;
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+#about .about-text h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  
+}
+#about .about-text p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: rgba(66, 66, 66, 0.89);
+}
+ #about .about-img img{
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  }
+
+#about{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+
+/* Locations Page */
+/* Locations Parallax Backgrounds */
+ .wahi-map iframe, .greenwich-map iframe, .harlem-map iframe {
+    left: 240px;
+    top: 0;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+}
+
+.wahi-map, .harlem-map, .greenwich-map {
+  overflow: hidden;
+  padding-bottom: 46.25%;
+  position: relative;
+  height: 0;
+}
+
+#locations-parallax{
+  background: url('/images/wahi.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 110%;
+}
+#locations-parallax-2 {
+  background: url('/images/harlem.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+#locations-parallax-3 {
+  background: url('/images/greenwich.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+
+
+
+
+
+/* Location Header Text */
+.locations-header-text {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 340px;
+  font-weight: 600;
+}
+.locations-header-text a{
+  border-bottom: 1px solid #fff;
+}
+.locations-header-text a:hover{
+  animation-name: header-text-hover;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes header-text-hover {
+  100% {
+   opacity: 0.7;
+   border-bottom-color: rgba(133, 133, 133, 0.3)
+  }
+}
+  /* Section: WAHI Content */
+  .locations-content{
+    background: rgb(252, 246, 237);
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .locations-content h2 {
+    padding: 2rem;
+    padding-top: 8rem;
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  .content-padding h3{
+    padding: 0.75rem;
+    
+  }
+  .map-margin{
+    margin: 8rem;
+  }
 
 
 
