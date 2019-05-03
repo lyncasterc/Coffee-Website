@@ -329,7 +329,13 @@ ul {
   .header-text h2 {
     margin-top: 200px;
   }
+  /* Location Page Media Query */
+  .locations-header-text {
+    margin-top: 150px;
+    font-size: 3rem;
+  }
 }
+  /* Home Page Media Queries */
 @media (max-width: 610px) {
   nav, nav ul {
     display: block;
@@ -373,8 +379,123 @@ ul {
    position: relative;
    bottom: 40px
   }
+
+/* Locations Page Media Queries */
+  .locations-header-text {
+    font-size: 1.5rem;
+    margin-top: 250px;
+  }
+
+  .harlem-address h2, .wahi-address h2, .greenwich-address h2 {
+    font-size: 2rem;
+  }
+  .harlem-address h3, .wahi-address h3, .greenwich-address h3 {
+    font-size: .90rem;
+  }
+
+  @media screen and (max-width: 510px) {
+    .wahi-map, .harlem-map, .greenwich-map {
+      display: none;
+    }
+    .wahi-address h3:last-child, .greenwich-address h3:last-child, .harlem-address h3:last-child {
+      padding-bottom: 5rem;
+    }
+  }
+
+  @media screen and (max-height: 340px) and (orientation: landscape) {
+    .locations-header-text {
+      margin-top: 50px;
+    }
+  }
+
+  /* Services Media Queries */
+  @media screen and (max-width: 664px) {
+    .services-boxes-container {
+      flex-direction: column;
+    }
+  }
 }
 
 
+/* Services Page */
+  .coffee-training-text, .coffee-catering-text, .coffee-repairs-text {
+    max-width: 350px;
+  }
+  .coffee-training-text h3, .coffee-catering-text h3, .coffee-repairs-text h3 {
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .coffee-training-text p, .coffee-catering-text p, .coffee-repairs-text p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .services-boxes-container{
+    display: flex;
+    margin-bottom: 8rem;
+  }
+ .services-boxes {
+   padding: 2rem;
+   margin: auto;
+ }
+ .services-header-text {
+   text-align: center;
+   margin-top: 8rem;
+   
+ }
+ .services-header-text h2 {
+   padding-bottom: 6rem;
+   font-size: 3rem;
+   font-weight: bolder;
+ }
+ .services-header-text h3 {
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+  main img {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+  }
 
+  .services-boxes-btn{
+    padding: 1rem 1.3rem;
+    border: 1px solid #fff;
+    background: #000000;
+    color: white;
+    font-size: 0.75rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .services-boxes-btn:hover {
+    animation-name: services-button-hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes services-button-hover{
+    100% {
+      background: #0000009c;
+  }
+    }
+  
 
+  .btn-container {
+    text-align: center;
+  }
+
+  /* Contact Page */
+
+  #contact form label {
+    display: block;
+  }
+  #contact form input {
+    width: 400px;
+  }
+
+  #contact .contact-container {
+    margin: auto;
+    display: block;
+  }
+ 
