@@ -417,7 +417,10 @@ ul {
   /* Contact Media Queries */
   @media screen and (max-width: 425px) {
     #contact-container form input, #contact-container form textarea {
-      width: 200px;
+      width: 150px;
+     }
+     .contact-form-container {
+       width: 200px;
      }
   }
 }
@@ -488,14 +491,18 @@ ul {
     }
   
 
-  /* .btn-container {
+  .btn-container {
     text-align: center;
-  } */
+  }
 
   /* Contact Page */
 
   /* Contact Parallax BG */
-
+  .contact-form-container {
+    width: 300px;
+    margin: auto;
+    padding: 4rem;
+  }
   #contact-parallax {
     background: url('../images/espresso-machine.jpg') no-repeat center center/cover;
     background-attachment: fixed;
@@ -506,6 +513,7 @@ ul {
     font-size: 4rem;
     font-weight: bold;
     padding-bottom: 3rem;
+    text-align: center;
   }
 
   #contact-container form label {
@@ -513,23 +521,19 @@ ul {
     font-size: 1rem;
     font-weight: bolder;
   }
-  #contact-container form {
-    margin: 8rem;
-  
-}
   
   #contact-container form label, #contact-container form button {
     display: block;
   
   }
   #contact-container form input {
-   width: 300px;
+   width: 250px;
    margin-bottom: 2rem;
    padding: 0.80rem;
    font-size: 1rem;
   }
   #contact-container form textarea {
-    width: 300px;
+    width: 250px;
     font-size: 1rem;
   }
 
