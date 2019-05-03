@@ -172,23 +172,23 @@ ul {
     padding-top: 1rem;
   }
   /* Sign up Form */
-  form{
+  footer form{
     padding: 3rem;
     text-transform: uppercase;
     align-self: flex-start;
     margin: auto;
   }
-  form h3{
+  footer form h3{
     margin-bottom: 1.5rem;
     font-size: 0.80rem;
   }
-  form input{
+  footer form input{
     min-width: 65%;
     padding: 0.75rem;
     font-size: 0.75rem;
   
   }
-  form button{
+  footer form button{
     padding: 0.75rem 1.3rem;
     border: 1px solid #fff;
     background: #000000;
@@ -198,11 +198,11 @@ ul {
     font-size: 0.75rem;
     margin-top: 1rem;
   }
-  form button:hover{
+  footer form button:hover{
     background:  rgb(252, 246, 237);
     color: #333;
   }
-  form input:focus, form button:focus{
+  footer form input:focus, footer form button:focus{
     outline: none;
   }
  .copyright-p{ 
@@ -414,6 +414,12 @@ ul {
       flex-direction: column;
     }
   }
+  /* Contact Media Queries */
+  @media screen and (max-width: 425px) {
+    #contact-container form input, #contact-container form textarea {
+      width: 200px;
+     }
+  }
 }
 
 
@@ -468,6 +474,7 @@ ul {
     font-size: 0.75rem;
     margin-top: 3rem;
     text-align: center;
+    
   }
   .services-boxes-btn:hover {
     animation-name: services-button-hover;
@@ -481,21 +488,70 @@ ul {
     }
   
 
-  .btn-container {
+  /* .btn-container {
     text-align: center;
-  }
+  } */
 
   /* Contact Page */
 
-  #contact form label {
-    display: block;
-  }
-  #contact form input {
-    width: 400px;
+  /* Contact Parallax BG */
+
+  #contact-parallax {
+    background: url('../images/espresso-machine.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 60%;
   }
 
-  #contact .contact-container {
-    margin: auto;
+  #contact-container form h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
+  }
+
+  #contact-container form label {
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  #contact-container form {
+    margin: 8rem;
+  
+}
+  
+  #contact-container form label, #contact-container form button {
     display: block;
+  
+  }
+  #contact-container form input {
+   width: 300px;
+   margin-bottom: 2rem;
+   padding: 0.80rem;
+   font-size: 1rem;
+  }
+  #contact-container form textarea {
+    width: 300px;
+    font-size: 1rem;
+  }
+
+  #contact-container form button {
+    padding: 1rem 1.7rem;
+    border: 1px solid #fff;
+    background: #000000;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1.5rem;
   }
  
+ #contact-container button:hover {
+    animation-name: contact-button-hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes contact-button-hover{
+    100% {
+      background: #0000009c;
+  }
+    }
+  
