@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catering &mdash; Victoria's Coffee</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Nav -->
+  <nav>
+    <h1> <a href="index.html">Victora's Coffee</a></h1>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Catering Form -->
+
+  <main id="catering-container">
+    <div class="catering-form-container">
+      <form action="#">
+      
+        <h3>TELL US MORE ABOUT YOUR EVENT</h3>
+
+       
+        <input type="text" name="name" id="name" required placeholder="Name *">
+
+       
+        <input type="email" name="email" id="email" placeholder="Email Address *" required>
+ 
+        
+        <input type="tel" name="phone" id="phone" required placeholder="Phone Number *">
+
+        <label for="event-type">Event Type *</label>
+        <select name="event-type" id="event-type" required> 
+          <option selected value="wedding">Wedding</option>
+          <option value="private">Private Event</option>
+          <option value="event-ven">Event Vendor</option>
+          <option value="other">Other</option>
+        </select>
+
+        <div class="event-location-section">
+            
+          <label for="address-1">
+            <input type="text" name="address" id="address-1" placeholder="Address *" required>
+          </label>
+  
+          <label for="address-2">
+            <input type="text" name="address-2" id="address-2" placeholder="Apartment, suite, etc (optional)">
+          </label>
+  
+          <label for="city">
+            <input type="text" name="city" id="city" placeholder="City *" required>
+          </label>
+  
+          <label for="state">
+            <input type="text" name="state" id="location" required placeholder="State *">
+          </label>
+  
+          <label for="zipcode">
+            <input type="text" name="zipcode" id="zipcode" required placeholder="Zip/Postal Code *">
+            
+          </label>
+  
+          <label for="country">
+            <input type="text" name="country" id="country" required placeholder="Country *">
+          </label>
+        </div>
+
+        <label for="event-date">Event Date *</label>
+        <input type="date" name="event-date" id="event-date"required>
+
+        <label for="guests">Number of Guests *</label>
+        <input type="text" name="guests" id="guests" placeholder="HOW MANY GUESTS DO YOU ANTICIPATE?" required>
+
+        
+         
+
+        <label for="event-description">Tell Us About Your Event *</label>
+        <textarea name="event-description" id="event-description" cols="30" rows="10" required></textarea>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+  </main>
+
+
+
+
+   <!-- Footer -->
+   <footer>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="mail-link"> <a href="mailto:info@victoriascoffee.com">info@victoriascoffee.com</a></li>
+      <li class="instagram-icon"> <a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+    </ul>
+    <form action="#">
+      <h3>Sign up to receive our weekly updates</h3>
+      <input type="email" name="email" id="email" placeholder="Email Address">
+      <button type="submit">Sign Up</button>
+
+    </form>
+    <div class="copyright-p">
+      <p>&copy; VICTORIA'S COFFEE 2019.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
