@@ -325,6 +325,11 @@ ul {
 
 
 /* Meqia Queries */
+@media screen and (max-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .header-text h2 {
     margin-top: 200px;
