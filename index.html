@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Victoria's Coffee</title>
 </head>
-<body>
+<body id="main">
   <!-- Background/Navbar -->
   <header id="home-parallax" class="parallax">
     <nav>
@@ -22,7 +22,32 @@
         <li><a href="work.html">Work</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+
+      <!-- Mobile Side-nav Icon -->
+
+      <span id = "close-menu" class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#f4f4f4" stroke-width="3"/>
+            <path d="M0,14 30,14" stroke="#f4f4f4" stroke-width="3"/>
+            <path d="M0,23 30,23" stroke="#f4f4f4" stroke-width="3"/>
+        </svg>
+      </a>
+    </span>
+
+
     </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
 
     <!--Header Text -->
     <div class="header-text">
@@ -64,5 +89,20 @@
         <p>&copy; VICTORIA'S COFFEE 2019.</p>
       </div>
     </footer>
+
+    <script>
+     let openSlideMenu = function() {
+      document.getElementById('side-menu').style.width = '250px'
+      // document.getElementById('main').style.marginRight = '250px'
+      document.getElementById('main').style.overflow = 'hidden'
+
+    }
+
+    let closeSlideMenu = function() {
+      document.getElementById('side-menu').style.width = '0px'
+      // document.getElementById('main').style.marginRight = '0px'
+      document.getElementById('main').style.overflow = 'scroll'
+    }
+    </script>
 </body>
 </html>

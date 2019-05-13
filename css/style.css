@@ -341,27 +341,60 @@ ul {
   }
 }
   /* Home Page Media Queries */
-@media (max-width: 610px) {
-  nav, nav ul {
-    display: block;
-    text-align: center;
 
-  }
-  nav ul {
-    margin-top: 1.5rem;
-  }
-  nav ul li {
-    padding: 0.75rem;
-  }
-  nav ul li a:hover {
-    background: none;
-    color: #fff;
+    /* Mobile Side Nav */
+@media (min-width: 611px) {
+  .side-nav, .open-slide {
+    display: none;
     
   }
-  .nav-active {
-    color: rgb(252, 246, 237);
-    background: none;
-  }
+}
+
+
+@media (max-width: 610px) {
+#main {
+  transition: all .4s ease;
+}
+
+
+ header nav ul{
+   display: none;
+ }
+
+ .side-nav {
+
+  height: 100%;
+  position: fixed;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  background:rgba(0, 0, 0, 0.9);
+  transition: all 0.4s ease;
+  color: #f4f4f4;
+  font-weight: bold;
+
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  font-size: 2rem !important;
+  transition: all .3s ease;
+  border: none !important;
+}
+.side-nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1rem;
+  display: block;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+}
+
 
   .header-text h2 {
     width: 300px;
