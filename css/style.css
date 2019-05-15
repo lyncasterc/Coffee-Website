@@ -23,12 +23,12 @@ ul {
 #home-parallax {
   background: url('../images/shop-counter.jpg') no-repeat center center/cover;
   width: 100%; 
-  height: 100vh;
+  height: 120vh;
 }
   #home-parallax-2 {
     background: url('../images/barista.jpg') no-repeat center center/cover;
     width: 100%; 
-    height: 80vh;
+    height: 100vh;
   }
 
 /* Navbar */
@@ -71,6 +71,17 @@ ul {
   /* Home Page */
   
   /* Header Text */
+
+  .header-text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+    
+  }
+
+
   .header-text h2 {
     font-size: 2.8rem;
     font-weight: 800;
@@ -78,12 +89,12 @@ ul {
     text-align: center;
     background: rgba(0, 0, 0, 0.719);
     width: 400px;
-    margin: auto;
-    padding: 1rem;
-    margin-top: 320px;
+    padding: 1.5rem;
     border: 3px solid #f4f4f4;
     
   }
+
+
   /* Section: Content Text */
   #content {
     background: rgb(252, 246, 237)
@@ -258,17 +269,20 @@ ul {
 #locations-parallax{
   background: url('../images/wahi.jpg') no-repeat center center/cover;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
+
 }
+
+
 #locations-parallax-2 {
   background: url('../images/harlem.jpg') no-repeat center center/cover;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
 }
 #locations-parallax-3 {
   background: url('../images/greenwich.jpg') no-repeat center center/cover;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
 }
 
 .wahi-map iframe, .greenwich-map iframe, .harlem-map iframe {
@@ -280,16 +294,29 @@ ul {
 
 /* Location Header Text */
 .locations-header-text {
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  height: 120vh;
+  justify-content: center;
+  align-items: center;
+  /* Overlay */
+  background-color: rgba(0,0,0,0.4);
+}
+
+.locations-header-text h2 {
+  font-weight: 600;
+  color: white;
   text-align: center;
   font-size: 5rem;
-  text-transform: uppercase;
-  color: white;
-  margin-top: 340px;
-  font-weight: 600;
+
 }
+
 .locations-header-text a{
   border-bottom: 1px solid #fff;
 }
+
+
 .locations-header-text a:hover{
   animation-name: header-text-hover;
   animation-duration: 300ms;
@@ -326,19 +353,28 @@ ul {
 
 
 /* Meqia Queries */
-@media screen and (max-width: 1024px) {
-  #home-parallax, #home-parallax-2 {
-    background-attachment: scroll;
-    
-  }
-}
+
 @media screen and (max-height: 500px) and (orientation: landscape) {
-  .header-text h2 {
-    margin-top: 200px;
+  #home-parallax {
+    height: 200vh;
   }
+  #home-parallax-2 {
+    height: 150vh;
+  }
+
+  #locations-parallax {
+    height: 200vh;
+  }
+
+  #locations-parallax-2, #locations-parallax-3 {
+    height: 150vh;
+  }
+
+
+
   /* Location Page Media Query */
   .locations-header-text {
-    margin-top: 150px;
+    height: 200vh;
     font-size: 3rem;
   }
 }
@@ -421,9 +457,9 @@ ul {
   }
 
 /* Locations Page Media Queries */
-  .locations-header-text {
-    font-size: 1.5rem;
-    margin-top: 250px;
+  .locations-header-text h2 {
+    font-size: 1.6rem;
+    
   }
 
   .harlem-address h2, .wahi-address h2, .greenwich-address h2 {
