@@ -22,13 +22,17 @@ ul {
 /* Homepage Parallax BG */
 #home-parallax {
   background: url('../images/shop-counter.jpg') no-repeat center center/cover;
-  background-attachment: fixed;
-  height: 135%;
+  width: 100%; 
+  height: 100vh;
+  /* background-attachment: fixed; */
+  /* height: 135%; */
 }
   #home-parallax-2 {
     background: url('../images/barista.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-    height: 80%;
+    width: 100%; 
+    height: 80vh;
+    /* background-attachment: fixed; */
+    /* height: 80%; */
   }
 
 /* Navbar */
@@ -326,8 +330,9 @@ ul {
 
 /* Meqia Queries */
 @media screen and (max-width: 1024px) {
-  .parallax {
+  #home-parallax, #home-parallax-2 {
     background-attachment: scroll;
+    
   }
 }
 @media screen and (max-height: 500px) and (orientation: landscape) {
