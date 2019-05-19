@@ -29,3 +29,6 @@ const parallax = document.querySelectorAll(".parallax");
           prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.7 + "px";
       })
   })
+
+
+  

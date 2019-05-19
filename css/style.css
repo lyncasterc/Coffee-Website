@@ -120,7 +120,7 @@ ul {
   
   .coffee-img-1 {
     width: 100%;
-    min-width: 500px;
+    min-width: 300px;
     margin-top: 2rem;
     height: auto;
   }
@@ -129,11 +129,12 @@ ul {
   }
   .coffee-img-2,
   .coffee-img-3 {
-    min-width: 400px;
+    min-width: 300px;
     width: 100%;
     flex:1;
     object-fit:cover;
     margin-top:2rem;
+    height: auto;
   }
   
   .column {
@@ -286,9 +287,10 @@ ul {
 }
 
 .wahi-map iframe, .greenwich-map iframe, .harlem-map iframe {
-  max-width: 100%;
-}
+  width: 50%;
+  min-width: 400px;
 
+}
 
 
 
@@ -441,12 +443,8 @@ ul {
     font-size: 1.5rem;
     padding: 50px;
   }
-  .coffee-img-1 {
-   display: none;
-  }
-  .coffee-img-2, .coffee-img-3{
-   display: none;
-  }
+ 
+  
   footer {
     display: flex;
     flex-direction: column;
@@ -459,6 +457,7 @@ ul {
 /* Locations Page Media Queries */
   .locations-header-text h2 {
     font-size: 1.6rem;
+    padding: 1.7rem;
     
   }
 
@@ -470,9 +469,18 @@ ul {
   }
 
   @media screen and (max-width: 510px) {
-    .wahi-map, .harlem-map, .greenwich-map {
-      display: none;
+   
+    .wahi-map iframe, .greenwich-map iframe, .harlem-map iframe {
+      width: 100%;
+      min-width: 350px;
+      height: 350px;
+    
     }
+
+   .map-margin {
+     margin: 3rem;
+   }
+
     .wahi-address h3:last-child, .greenwich-address h3:last-child, .harlem-address h3:last-child {
       padding-bottom: 5rem;
     }
